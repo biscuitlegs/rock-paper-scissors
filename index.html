@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src='script/main.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <h1>Rock Paper Scissors</h1>
+        <p>This is a best of five game. You will play against the computer. The first one to win 3 rounds will win the game!</p>
+    </header>
+    <div class="container">
+        <button id="rockButton">Rock</button>
+        <button id="paperButton">Paper</button>
+        <button id="scissorsButton">Scissors</button>
+    </div>
+    <main>
+        <div class="container">
+            <div id="playerWins">
+                <h2>Player Wins:</h2>
+                <p>lorem</p>
+            </div>
+            <div id="computerWins">
+                <h2>Computer Wins:</h2>
+                <p>lorem</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <h2>Results:</h2>
+            <div id="results">The results of a round will be shown here.
+            </div>
+        </div>
+    </main>
 </body>
+<script src='script/main.js'></script>
 </html>
