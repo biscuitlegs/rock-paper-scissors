@@ -53,17 +53,22 @@ if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'rock') {
 }
 
 function checkWinner() {
-  if (roundCounter === 5 && playerWins > computerWins) {
-    alert('You won the game!');
+  if (playerWins >=3) {
+    alert(`Final Score: \n Player: ${playerWins} \n Computer: ${computerWins} \n You won the game!`);
     resetGame();
-  } else if (roundCounter === 5 && computerWins > playerWins) {
-    alert('The computer won the game!');
+  } else if (computerWins >=3) {
+    alert(`Final Score: \n Player: ${playerWins} \n Computer: ${computerWins} \n The computer won the game!`);
     resetGame();
-  }
-    else if (roundCounter === 5 && playerWins === computerWins) {
-      alert('The game is a tie!')
+  } else if (roundCounter === 5 && playerWins === computerWins) {
+      alert(`Final Score: \n Player: ${playerWins} \n Computer: ${computerWins} \n The game is a tie!`);
       resetGame();
-    }
+  } else if (roundCounter === 5 && playerWins > computerWins) {
+      alert(`Final Score: \n Player: ${playerWins} \n Computer: ${computerWins} \n You won the game!`);
+      resetGame();
+  } else if (roundCounter === 5 && computerWins > playerWins) {
+    alert(`Final Score: \n Player: ${playerWins} \n Computer: ${computerWins} \n The computer won the game!`);
+      resetGame();
+  }
 }
 
 function resetGame() {
